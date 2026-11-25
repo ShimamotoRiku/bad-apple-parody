@@ -1,0 +1,7 @@
+municipality/data/
+municipality/frames/
+municipality/real/
+municipality/targets/
+municipality/out/
+__pycache__/
+*.pyc
