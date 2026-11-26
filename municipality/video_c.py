@@ -229,7 +229,11 @@ def side_lists(z, draw, by_frame, tf, lo, hi):
 
 
 def credits(zooms, f):
-    lines = ['使用したデータ', '',
+    lines = ['原作', '',
+             '楽曲：Bad Apple!! feat.nomico（Alstroemeria Records）',
+             '　原曲：「Bad Apple!!」ZUN（上海アリス幻樂団／東方Project）',
+             '影絵映像：あにら', '',
+             '使用したデータ', '',
              '行政区域：国土数値情報（行政区域データ）（国土交通省）を',
              '　smartnews-smri/japan-topography が簡素化したものを加工して作成', '']
     if any(z >= 14 for z in zooms):
