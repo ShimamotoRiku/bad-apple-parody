@@ -4,7 +4,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 from shapely.geometry import shape
 from shapely.strtree import STRtree
 
-d = json.load(open(os.path.join(BASE, 'data/japan-topography/data/municipality/geojson/s0010/N03-21_210101.json')))
+d = json.load(open(os.path.join(BASE, 'data/japan-topography/data/municipality/geojson/s0010/N03-21_210101.json'), encoding='utf-8'))
 names, geoms = [], []
 for f in d['features']:
     p = f['properties']

@@ -7,5 +7,5 @@ if [ ! -d data/japan-topography ]; then
   git clone --depth 1 --filter=blob:none --sparse https://github.com/smartnews-smri/japan-topography data/japan-topography
 fi
 cd data/japan-topography
-git sparse-checkout set --no-cone '/data/municipality/geojson/s0010/N03-21_210101.json'
+MSYS_NO_PATHCONV=1 git sparse-checkout set --no-cone '/data/municipality/geojson/s0010/N03-21_210101.json'
 echo "done: data/japan-topography/data/municipality/geojson/s0010/N03-21_210101.json"
